@@ -3,8 +3,8 @@
 > TLDR: Get a list of current windows (with handle and class)
 
 ```pwsh
-git\guy\windows-tools via .NET v7.0.302 🎯 net7.0
-❯ dotnet run | ConvertFrom-Json
+$ git clone git@github.com:guylangston/windows-tools.git
+$ dotnet run | ConvertFrom-Json
 
  Handle Title                       WindowClass
  ------ -----                       -----------
