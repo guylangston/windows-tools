@@ -2,7 +2,7 @@
 
 > TLDR: Get a list of current windows (with handle and class)
 
-```pwsh
+```powershell
 $ git clone git@github.com:guylangston/windows-tools.git
 $ dotnet run | ConvertFrom-Json
 
