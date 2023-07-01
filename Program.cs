@@ -10,7 +10,10 @@ static class Program
         var json = !args.Contains("--text");
         var refreshChrome = args.Contains("--refresh-chrome");
 
-        var windows = Windows.EnumWindowsWrapper().OrderBy(x => x.HandleIntPtr).ThenBy(x => x.Title).ToList();
+        var windows = Windows.EnumWindowsWrapper()
+            .OrderBy(x => x.WindowClass)
+            .ThenBy(x=>x.Started)
+            .ToList();
 
         if (refreshChrome)
         {
